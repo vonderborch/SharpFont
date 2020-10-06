@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{81158C54-C830-4056-B5D6-AE9059741B20}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpFont.HarfBuzz.Example", "SharpFont.HarfBuzz.Example\SharpFont.HarfBuzz.Example.csproj", "{1D488727-E222-43A2-BBBD-095F17A488C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HarfBuzz", "HarfBuzz", "{11A19A77-0E52-4BC0-A098-5FD64908EAFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpFont.NetStandard", "SharpFont.NetStandard\SharpFont.NetStandard.csproj", "{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,12 @@ Global
 		{1D488727-E222-43A2-BBBD-095F17A488C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D488727-E222-43A2-BBBD-095F17A488C8}.ReleaseNET20|Any CPU.ActiveCfg = Release|Any CPU
 		{1D488727-E222-43A2-BBBD-095F17A488C8}.ReleaseNET20|Any CPU.Build.0 = Release|Any CPU
+		{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}.ReleaseNET20|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4E45E7-A7CD-4D90-A9F5-FC9C49DA6F6B}.ReleaseNET20|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{31457A69-1EF3-4CDC-8741-6DE3DDB82D3B} = {11A19A77-0E52-4BC0-A098-5FD64908EAFA}
 		{1D488727-E222-43A2-BBBD-095F17A488C8} = {11A19A77-0E52-4BC0-A098-5FD64908EAFA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {573CBE78-75B2-4EC2-A34D-B8143A96498D}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Examples\Examples.csproj
