@@ -28,6 +28,7 @@ using System.Runtime.InteropServices;
 
 using SharpFont.Cache;
 using SharpFont.Internal;
+using SharpFont.NetStandard;
 using SharpFont.TrueType;
 
 namespace SharpFont
@@ -72,6 +73,8 @@ namespace SharpFont
 		public Library()
 			: this(false)
 		{
+			ArchitectureDllImport.LoadArchitectureDependencyDirectory();
+
 			IntPtr libraryRef;
 			Error err = FT.FT_Init_FreeType(out libraryRef);
 
@@ -88,6 +91,8 @@ namespace SharpFont
 		public Library(Memory memory)
 			: this(false)
 		{
+			ArchitectureDllImport.LoadArchitectureDependencyDirectory();
+
 			IntPtr libraryRef;
 			Error err = FT.FT_New_Library(memory.Reference, out libraryRef);
 
