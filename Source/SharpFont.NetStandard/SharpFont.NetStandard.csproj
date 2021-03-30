@@ -11,7 +11,7 @@
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <FileVersion>4.0.1.0</FileVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Platforms>AnyCPU;x64;x86</Platforms>
   </PropertyGroup>
 
@@ -58,11 +58,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="freetype6-x64.dll" />
-    <None Remove="freetype6-x86.dll" />
+    <None Remove="lib\x64\freetype6.dll" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="lib\x64\freetype6.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="lib\x64\freetype6.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
