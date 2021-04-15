@@ -27,7 +27,11 @@ namespace SharpFont.NetStandard
 
 			if (!string.IsNullOrWhiteSpace(dllPath))
 			{
-				SetDllDirectory(Path.Combine(Directory.GetCurrentDirectory(), "lib", dllPath));
+				var path = Path.Combine(Directory.GetCurrentDirectory(), "lib", dllPath);
+				if (Directory.Exists(path))
+				{
+					SetDllDirectory(path);
+				}
 			}
 		}
 	}
