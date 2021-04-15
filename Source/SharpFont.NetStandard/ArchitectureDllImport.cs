@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 
@@ -28,7 +27,11 @@ namespace SharpFont.NetStandard
 
 			if (!string.IsNullOrWhiteSpace(dllPath))
 			{
-				SetDllDirectory(String.Concat(Directory.GetCurrentDirectory(), "lib", dllPath));
+				var path = Path.Combine(Directory.GetCurrentDirectory(), "lib", dllPath);
+				if (Directory.Exists(path))
+				{
+					SetDllDirectory(path);
+				}
 			}
 		}
 	}
